@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In-Memory Ecommerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">ShopBay</span>
+        <span class="tag">Better prices, fast delivery</span>
+      </div>
+      <div class="search-box">
+        <input id="search-input" type="search" placeholder="Search products, brands and more" />
+        <button id="search-button" class="btn search-btn">Search</button>
+      </div>
+      <nav class="nav-links">
+        <a href="login.html">Login</a>
+        <a href="orders.html">Orders</a>
+        <a href="checkout.html">Cart</a>
+      </nav>
+    </header>
+
+    <section class="hero-panel">
+      <div>
+        <h1>Buy the best products in one place</h1>
+        <p>Modern UI with instant cart updates, checkout summary, and saved items — all stored on server memory and file persistence.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn">Explore Catalog</a>
+          <a href="gallery.html" class="btn secondary-btn">Open Gallery</a>
+        </div>
+        <div id="mini-cart-notice" class="mini-cart-notice hidden"></div>
+      </div>
+      <div class="stepper">
+        <a href="products.html" class="step active">
+          <span>1</span>
+          <div>Browse products</div>
+        </a>
+        <a href="products.html" class="step">
+          <span>2</span>
+          <div>Add to cart</div>
+        </a>
+        <a href="checkout.html" class="step">
+          <span>3</span>
+          <div>Review & checkout</div>
+        </a>
+      </div>
+    </section>
+
+    <div class="content-grid">
+      <section class="panel categories-panel">
+        <div class="panel-header">
+          <div>
+            <h2>Shop by category</h2>
+            <p class="subtext">Choose a category to browse products with matching styles and curated items.</p>
+          </div>
+        </div>
+        <div class="category-grid">
+          <a href="products.html?category=cloth" class="category-card">Cloth</a>
+          <a href="products.html?category=accessories" class="category-card">Accessories</a>
+          <a href="products.html?category=furniture" class="category-card">Furniture</a>
+          <a href="products.html?category=mens" class="category-card">Mens</a>
+          <a href="products.html?category=womens" class="category-card">Womens</a>
+          <a href="products.html?category=work" class="category-card">Work</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/ui-enhancements.js"></script>
+</body>
+</html>

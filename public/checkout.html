@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout – ShopBay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">ShopBay</span>
+        <span class="tag">Review your cart and complete the purchase.</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="saved.html">Saved</a>
+      </nav>
+    </header>
+
+    <section class="panel checkout-panel">
+      <div class="panel-header">
+        <h2>Checkout</h2>
+        <p class="subtext">Confirm the order, modify quantities, or place your order.</p>
+      </div>
+      <div id="checkout-cart" class="checkout-cart"></div>
+      <div id="checkout-summary" class="summary"></div>
+      <button id="place-order-btn" class="btn checkout-btn">Place Order</button>
+      <div id="order-message" class="order-message"></div>
+    </section>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/ui-enhancements.js"></script>
+</body>
+</html>

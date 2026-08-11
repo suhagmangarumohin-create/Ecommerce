@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products – ShopBay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">ShopBay</span>
+        <span class="tag">Explore categories and best deals</span>
+      </div>
+      <div class="search-box">
+        <input id="search-input" type="search" placeholder="Search products, brands and more" />
+        <button id="search-button" class="btn search-btn">Search</button>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="saved.html">Saved</a>
+      </nav>
+    </header>
+
+    <section class="panel products-panel">
+      <div class="panel-header">
+        <div>
+          <h2>All Products</h2>
+          <p class="subtext">Browse by category and click any card to view product details.</p>
+        </div>
+        <select id="category-select" class="category-select">
+          <option value="">All categories</option>
+        </select>
+      </div>
+      <div id="search-status" class="search-status"></div>
+      <div id="product-list" class="grid"></div>
+    </section>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/ui-enhancements.js"></script>
+</body>
+</html>
