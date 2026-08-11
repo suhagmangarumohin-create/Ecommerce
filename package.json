@@ -1,14 +1,12 @@
 {
-  "name": "ecommerce-enterprise-suite",
-  "description": "Dummy full-stack ecommerce project used by SupportAI demos",
-  "private": true,
+  "name": "eecommerce-platform",
   "version": "1.0.0",
-  "type": "module",
+  "description": "Dummy ecommerce project used by SupportAI demos",
+  "main": "server.js",
   "scripts": {
-    "start": "powershell -ExecutionPolicy Bypass -File backend/scripts/start.ps1",
-    "dev": "powershell -ExecutionPolicy Bypass -File backend/scripts/start.ps1",
-    "reset-db": "powershell -ExecutionPolicy Bypass -File backend/scripts/reset-db.ps1",
-    "check": "powershell -ExecutionPolicy Bypass -File backend/scripts/check.ps1"
+    "start": "node server.js"
   },
-  "workspaces": ["apps/*", "services/*", "packages/*"]
+  "dependencies": {
+    "express": "^4.18.4"
+  }
 }
