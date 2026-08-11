@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce-enterprise-suite",
+  "description": "Dummy full-stack ecommerce project used by SupportAI demos",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File backend/scripts/start.ps1",
+    "dev": "powershell -ExecutionPolicy Bypass -File backend/scripts/start.ps1",
+    "reset-db": "powershell -ExecutionPolicy Bypass -File backend/scripts/reset-db.ps1",
+    "check": "powershell -ExecutionPolicy Bypass -File backend/scripts/check.ps1"
+  },
+  "workspaces": ["apps/*", "services/*", "packages/*"]
+}

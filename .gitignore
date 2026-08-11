@@ -1,0 +1,4 @@
+node_modules/
+backend/out/
+backend/out-check/
+*.log
