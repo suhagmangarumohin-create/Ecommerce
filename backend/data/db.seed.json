@@ -1,0 +1,79 @@
+{
+  "products": [
+    {
+      "id": "sku-1000",
+      "slug": "trailrunner-pro",
+      "name": "TrailRunner Pro",
+      "category": "Footwear",
+      "price": 129.99,
+      "currency": "USD",
+      "inventoryCount": 14,
+      "description": "High-grip performance running shoe built for long-distance outdoor training.",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+      "tags": ["running", "outdoor", "best-seller"]
+    },
+    {
+      "id": "sku-1001",
+      "slug": "aerobottle-1l",
+      "name": "AeroBottle 1L",
+      "category": "Accessories",
+      "price": 24.5,
+      "currency": "USD",
+      "inventoryCount": 20,
+      "description": "Lightweight insulated hydration bottle for gym and travel use.",
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
+      "tags": ["hydration", "gym"]
+    },
+    {
+      "id": "sku-1002",
+      "slug": "citypack-28",
+      "name": "CityPack 28",
+      "category": "Bags",
+      "price": 89,
+      "currency": "USD",
+      "inventoryCount": 6,
+      "description": "Compact urban backpack with laptop compartment and expandable storage.",
+      "image": "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=900&q=80",
+      "tags": ["travel", "commuter"]
+    },
+    {
+      "id": "sku-1003",
+      "slug": "nova-watch",
+      "name": "Nova Watch",
+      "category": "Wearables",
+      "price": 199,
+      "currency": "USD",
+      "inventoryCount": 11,
+      "description": "Fitness smartwatch with heart-rate tracking and seven-day battery life.",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
+      "tags": ["fitness", "smartwatch"]
+    },
+    {
+      "id": "sku-1004",
+      "slug": "deskcharge-duo",
+      "name": "DeskCharge Duo",
+      "category": "Electronics",
+      "price": 59.99,
+      "currency": "USD",
+      "inventoryCount": 18,
+      "description": "Dual wireless charging dock for phone and earbuds with fast charge support.",
+      "image": "https://images.unsplash.com/photo-1585338447937-7082f8fc763d?auto=format&fit=crop&w=900&q=80",
+      "tags": ["charging", "desk", "electronics"]
+    },
+    {
+      "id": "sku-1005",
+      "slug": "comfort-hoodie",
+      "name": "Comfort Hoodie",
+      "category": "Apparel",
+      "price": 74,
+      "currency": "USD",
+      "inventoryCount": 9,
+      "description": "Premium cotton hoodie with brushed interior and oversized fit.",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+      "tags": ["hoodie", "apparel"]
+    }
+  ],
+  "carts": [],
+  "orders": [],
+  "payments": []
+}
