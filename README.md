@@ -1,23 +1,22 @@
-# ECommerce Enterprise Suite
+# EEcommerce Platform
 
-A dummy enterprise-grade ecommerce project used by SupportAI demos.
+A dummy ecommerce project used by SupportAI demos.
 
 ## What is included
 
-- `frontend/` for the storefront UI
-- `backend/` for the Java API and JSON persistence
-- `backend/data/db.json` as the file database
-- enterprise-style support docs, defect notes, and product modules for SupportAI indexing
+- `public/` multi-page storefront experience
+- `server.js` Express backend API
+- `cart.json` and `parttime.json` as file-based persistence
+- defect notes and enterprise-style support artifacts for future ServiceNow/Jira work
 
 ## Core ecommerce functionality
 
 - browse products
 - add products to cart
 - update or remove cart items
-- preview checkout totals
-- place order
-- make payment
-- view order history
+- review checkout totals
+- login page and order history page
+- save/remove temporary items
 
 ## Run locally
 
@@ -27,30 +26,28 @@ npm start
 
 Then open:
 
-- `http://localhost:4500`
+- `http://localhost:3000`
 
 Backend stack:
 
-- Java 8 HTTP server
-- JSON file database
-- browser-based frontend
+- Node.js + Express
+- file-based JSON persistence
+- browser-based multi-page frontend
 
 ## API endpoints
 
 - `GET /api/products`
-- `GET /api/cart?cartId=<id>`
-- `POST /api/cart/items`
-- `PATCH /api/cart/items/:productId`
-- `DELETE /api/cart/items/:productId?cartId=<id>`
-- `POST /api/checkout/preview`
-- `POST /api/orders`
-- `POST /api/payments`
-- `GET /api/orders`
-- `GET /api/orders/:id`
+- `GET /api/cart`
+- `POST /api/cart/add`
+- `POST /api/cart/update`
+- `POST /api/cart/remove`
+- `GET /api/checkout`
+- `GET /api/parttime`
+- `POST /api/parttime/add`
+- `POST /api/parttime/remove`
 
 ## Intentional support-demo defects kept in the repo
 
-1. Checkout tax logic defect in legacy portfolio code paths
-2. Search can return out-of-stock products in legacy discover logic
-3. Deleted users may still appear in admin search
-4. Campaign date-window logic can shift around midnight
+1. Shipping is incorrectly waived for carts spanning multiple categories.
+2. Cart quantity validation allows invalid updates in some client flows.
+3. Search and recommendation behavior needs better stock-awareness rules.
